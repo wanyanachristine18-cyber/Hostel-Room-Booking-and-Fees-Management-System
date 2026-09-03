@@ -1,0 +1,13 @@
+Block,Room Number,Capacity,Occupancy,Vacant Beds,Status,Occupant Names,Occupant Reg Nos
+Block A,A-101,2,2,0,Full,"Alice Johnson, Bob Smith","UG-2026-001, UG-2026-002"
+Block A,A-102,2,1,1,Partially Occupied,Charlie Davis,UG-2026-003
+Block A,A-103,2,0,2,Empty,,
+Block A,A-104,2,0,2,Empty,,
+Block A,A-105,2,0,2,Empty,,
+Block B,B-101,3,2,1,Partially Occupied,"David Miller, Emma Wilson","UG-2026-004, UG-2026-005"
+Block B,B-102,3,1,2,Partially Occupied,Frank Thomas,UG-2026-006
+Block B,B-103,3,0,3,Empty,,
+Block B,B-104,3,0,3,Empty,,
+Block C,C-101,4,3,1,Partially Occupied,"Grace Lee, Henry Clark, Ian Wright","UG-2026-007, UG-2026-008, UG-2026-009"
+Block C,C-102,4,0,4,Empty,,
+Block C,C-103,4,0,4,Empty,,

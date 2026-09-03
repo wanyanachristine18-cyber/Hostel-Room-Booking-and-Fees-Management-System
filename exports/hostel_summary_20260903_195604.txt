@@ -1,0 +1,46 @@
+========================================================================
+     UNIVERSITY HOSTEL MANAGEMENT SYSTEM - COMPREHENSIVE REPORT
+========================================================================
+
+1. HOSTEL OCCUPANCY OVERVIEW
+------------------------------------------------------------------------
+Total Rooms     : 12
+Total Capacity  : 34 beds
+Occupied Beds   : 2 beds
+Available Beds  : 32 beds
+Overall Rate    : 5.9%
+
+2. DETAILED BLOCK & ROOM OCCUPANCY
+------------------------------------------------------------------------
+
+Block: Block A (Base Fee: $1200.00)
+Capacity: 2/10 beds | Vacant: 8
+  Room A-101  | 2/2 beds | Full             | Occupants: Alice Smith (R001), Bob Jones (R002)
+  Room A-102  | 0/2 beds | Empty            | Occupants: [None]
+  Room A-103  | 0/2 beds | Empty            | Occupants: [None]
+  Room A-104  | 0/2 beds | Empty            | Occupants: [None]
+  Room A-105  | 0/2 beds | Empty            | Occupants: [None]
+
+Block: Block B (Base Fee: $1000.00)
+Capacity: 0/12 beds | Vacant: 12
+  Room B-101  | 0/3 beds | Empty            | Occupants: [None]
+  Room B-102  | 0/3 beds | Empty            | Occupants: [None]
+  Room B-103  | 0/3 beds | Empty            | Occupants: [None]
+  Room B-104  | 0/3 beds | Empty            | Occupants: [None]
+
+Block: Block C (Base Fee: $800.00)
+Capacity: 0/12 beds | Vacant: 12
+  Room C-101  | 0/4 beds | Empty            | Occupants: [None]
+  Room C-102  | 0/4 beds | Empty            | Occupants: [None]
+  Room C-103  | 0/4 beds | Empty            | Occupants: [None]
+
+3. FEE DEFAULTERS REPORT (Threshold: > $400.00)
+------------------------------------------------------------------------
+Found 2 defaulter(s) - Total Outstanding Debt: $1900.00
+
+Reg No       | Name                   | Room     | Total Fee  | Paid       | Balance Due
+------------------------------------------------------------------------
+R002         | Bob Jones              | A-101    | $1200.00   | $0.00      | $1200.00
+R001         | Alice Smith            | A-101    | $1200.00   | $500.00    | $700.00
+
+========================================================================

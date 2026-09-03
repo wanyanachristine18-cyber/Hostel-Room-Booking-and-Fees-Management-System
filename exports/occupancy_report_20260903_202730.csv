@@ -1,0 +1,13 @@
+Block,Room Number,Capacity,Occupancy,Vacant Beds,Status,Occupant Names,Occupant Reg Nos
+Block A,A-101,2,2,0,Full,"Alice Smith, Bob Jones","R001, R002"
+Block A,A-102,2,0,2,Empty,,
+Block A,A-103,2,0,2,Empty,,
+Block A,A-104,2,0,2,Empty,,
+Block A,A-105,2,0,2,Empty,,
+Block B,B-101,3,0,3,Empty,,
+Block B,B-102,3,0,3,Empty,,
+Block B,B-103,3,0,3,Empty,,
+Block B,B-104,3,0,3,Empty,,
+Block C,C-101,4,0,4,Empty,,
+Block C,C-102,4,0,4,Empty,,
+Block C,C-103,4,0,4,Empty,,

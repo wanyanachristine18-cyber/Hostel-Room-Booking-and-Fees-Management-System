@@ -1,0 +1,247 @@
+{
+  "version": "1.0",
+  "saved_at": "2026-09-03 20:41:56",
+  "blocks": {
+    "Block A": {
+      "name": "Block A",
+      "base_fee": 1200.0,
+      "rooms": {
+        "A-101": {
+          "room_number": "A-101",
+          "block_name": "Block A",
+          "capacity": 2,
+          "occupant_reg_nos": [
+            "UG-2026-001",
+            "UG-2026-002"
+          ]
+        },
+        "A-102": {
+          "room_number": "A-102",
+          "block_name": "Block A",
+          "capacity": 2,
+          "occupant_reg_nos": [
+            "UG-2026-003"
+          ]
+        },
+        "A-103": {
+          "room_number": "A-103",
+          "block_name": "Block A",
+          "capacity": 2,
+          "occupant_reg_nos": []
+        },
+        "A-104": {
+          "room_number": "A-104",
+          "block_name": "Block A",
+          "capacity": 2,
+          "occupant_reg_nos": []
+        },
+        "A-105": {
+          "room_number": "A-105",
+          "block_name": "Block A",
+          "capacity": 2,
+          "occupant_reg_nos": []
+        }
+      }
+    },
+    "Block B": {
+      "name": "Block B",
+      "base_fee": 1000.0,
+      "rooms": {
+        "B-101": {
+          "room_number": "B-101",
+          "block_name": "Block B",
+          "capacity": 3,
+          "occupant_reg_nos": [
+            "UG-2026-004",
+            "UG-2026-005"
+          ]
+        },
+        "B-102": {
+          "room_number": "B-102",
+          "block_name": "Block B",
+          "capacity": 3,
+          "occupant_reg_nos": [
+            "UG-2026-006"
+          ]
+        },
+        "B-103": {
+          "room_number": "B-103",
+          "block_name": "Block B",
+          "capacity": 3,
+          "occupant_reg_nos": []
+        },
+        "B-104": {
+          "room_number": "B-104",
+          "block_name": "Block B",
+          "capacity": 3,
+          "occupant_reg_nos": []
+        }
+      }
+    },
+    "Block C": {
+      "name": "Block C",
+      "base_fee": 800.0,
+      "rooms": {
+        "C-101": {
+          "room_number": "C-101",
+          "block_name": "Block C",
+          "capacity": 4,
+          "occupant_reg_nos": [
+            "UG-2026-007",
+            "UG-2026-008",
+            "UG-2026-009"
+          ]
+        },
+        "C-102": {
+          "room_number": "C-102",
+          "block_name": "Block C",
+          "capacity": 4,
+          "occupant_reg_nos": []
+        },
+        "C-103": {
+          "room_number": "C-103",
+          "block_name": "Block C",
+          "capacity": 4,
+          "occupant_reg_nos": []
+        }
+      }
+    }
+  },
+  "students": {
+    "UG-2026-001": {
+      "reg_no": "UG-2026-001",
+      "name": "Alice Johnson",
+      "allocated_room": "A-101",
+      "total_fee": 1200.0,
+      "paid_fee": 1200.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-D801ADC0",
+          "student_reg_no": "UG-2026-001",
+          "amount": 1200.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Full semester fee cleared via Bank Transfer"
+        }
+      ]
+    },
+    "UG-2026-002": {
+      "reg_no": "UG-2026-002",
+      "name": "Bob Smith",
+      "allocated_room": "A-101",
+      "total_fee": 1200.0,
+      "paid_fee": 600.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-5D96D689",
+          "student_reg_no": "UG-2026-002",
+          "amount": 600.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "First 50% installment"
+        }
+      ]
+    },
+    "UG-2026-003": {
+      "reg_no": "UG-2026-003",
+      "name": "Charlie Davis",
+      "allocated_room": "A-102",
+      "total_fee": 1200.0,
+      "paid_fee": 0.0,
+      "payments": []
+    },
+    "UG-2026-004": {
+      "reg_no": "UG-2026-004",
+      "name": "David Miller",
+      "allocated_room": "B-101",
+      "total_fee": 1000.0,
+      "paid_fee": 750.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-00480CD9",
+          "student_reg_no": "UG-2026-004",
+          "amount": 500.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "First installment via Mobile Money"
+        },
+        {
+          "transaction_id": "TXN-12D0BE2F",
+          "student_reg_no": "UG-2026-004",
+          "amount": 250.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Second installment"
+        }
+      ]
+    },
+    "UG-2026-005": {
+      "reg_no": "UG-2026-005",
+      "name": "Emma Wilson",
+      "allocated_room": "B-101",
+      "total_fee": 1000.0,
+      "paid_fee": 1000.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-1C64A8DB",
+          "student_reg_no": "UG-2026-005",
+          "amount": 1000.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Full payment upfront"
+        }
+      ]
+    },
+    "UG-2026-006": {
+      "reg_no": "UG-2026-006",
+      "name": "Frank Thomas",
+      "allocated_room": "B-102",
+      "total_fee": 1000.0,
+      "paid_fee": 300.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-3A0FDB3B",
+          "student_reg_no": "UG-2026-006",
+          "amount": 300.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Deposit"
+        }
+      ]
+    },
+    "UG-2026-007": {
+      "reg_no": "UG-2026-007",
+      "name": "Grace Lee",
+      "allocated_room": "C-101",
+      "total_fee": 800.0,
+      "paid_fee": 0.0,
+      "payments": []
+    },
+    "UG-2026-008": {
+      "reg_no": "UG-2026-008",
+      "name": "Henry Clark",
+      "allocated_room": "C-101",
+      "total_fee": 800.0,
+      "paid_fee": 400.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-B8A3119E",
+          "student_reg_no": "UG-2026-008",
+          "amount": 400.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Part payment"
+        }
+      ]
+    },
+    "UG-2026-009": {
+      "reg_no": "UG-2026-009",
+      "name": "Ian Wright",
+      "allocated_room": "C-101",
+      "total_fee": 800.0,
+      "paid_fee": 800.0,
+      "payments": [
+        {
+          "transaction_id": "TXN-1AF93047",
+          "student_reg_no": "UG-2026-009",
+          "amount": 800.0,
+          "timestamp": "2026-09-03 20:41:37",
+          "remarks": "Full settlement"
+        }
+      ]
+    }
+  }
+}

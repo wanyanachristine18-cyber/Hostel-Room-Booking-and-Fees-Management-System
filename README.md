@@ -109,3 +109,41 @@ python main.py
 ```bash
 py -m unittest discover -s tests -v
 ```
+
+---
+
+## Room Capacity Enforcement & Occupancy Notification
+
+The system proactively informs users and wardens regarding room occupancy and capacity across all touchpoints:
+
+### 1. Booking Pre-Check & Full Room Notification
+When registering a student and choosing a room, the CLI displays available rooms per block. When a block is completely full, it explicitly alerts the user:
+```text
+Currently Available Rooms:
+  * Block A: FULL (None available)
+```
+
+### 2. Allocation Rejection with Contextual Suggestions
+Attempting to allocate a student to an occupied room is rejected gracefully:
+```text
+[ERROR] Allocation Rejected: Room 'A-101' in Block A is FULL (Capacity: 2/2). No rooms currently available in Block A.
+```
+*(If alternative rooms exist in the same block, they are suggested dynamically: e.g., `Available rooms in Block A: A-103, A-104`)*.
+
+### 3. Occupancy Tracking Displays
+- **Overview Table (Menu Option 1)**: Real-time table displaying `Capacity`, `Occupied`, `Available`, and `Occupancy %` per block and system-wide totals (`Available: 0`, `Occupancy %: 100.0%`).
+- **Detailed Block Report (Menu Option 4)**: Room-by-room breakdown classifying each room as `Full`, `Partially Occupied`, or `Empty` with occupant lists and `0` vacant beds shown for full rooms.
+- **CSV & TXT Exports (Menu Options 6 & 8)**: Detailed exported reports include room capacity status and bed vacancy columns.
+
+### 4. Verification & Test Evidence
+Automated unit and integration tests confirm capacity enforcement across all layers:
+- [`tests/test_manager.py`](tests/test_manager.py) - `test_allocate_student_room_full_rejection_error_path`
+- [`tests/test_models.py`](tests/test_models.py) - `test_room_capacity_and_is_full` & `add_occupant_raises_when_full`
+- [`tests/test_exports.py`](tests/test_exports.py) - `test_export_occupancy_report_csv`
+- [`tests/test_cli_integration.py`](tests/test_cli_integration.py) - `test_cli_complete_warden_workflow`
+
+Test execution command:
+```bash
+py -m unittest discover -s tests -p "test_*.py"
+```
+**Result**: 39/39 tests pass successfully.
